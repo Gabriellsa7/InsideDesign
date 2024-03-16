@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  padding: 3rem 0 4rem 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10%;
+}
+
+.checked {
+  border-bottom: 0.1rem solid #000000;
+}
+
+.checked:hover {
+  border-bottom: 1px solid #ea4c89;
+}
+
+.navbar ul li a {
+  color: #0e0e0ec6;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbar ul li a:hover {
+  color: #999;
+}
+
+/* Products carrinho de compras */
+
+.title {
+  padding-bottom: 3rem;
+}
+
+.cart-top {
+  display: flex;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.title-itens {
+  width: 35%;
+}
+
+.title-price {
+  width: 45%;
+}
+
+.title-quantity {
+  width: 25%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem 2rem 3rem;
+  border-bottom: 0.1rem solid black;
+  width: 100%;
+}
+
+.itens {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.itens img {
+  width: 9rem;
+}
+
+.product-qtd-input {
+  width: 48px;
+  height: 34px;
+  border-radius: 6px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  background: #eee;
+}
+
+.remove-product-button {
+  margin-left: 12px;
+  background: #ff0000;
+  color: var(--white);
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 6px;
+
+  transition: filter 0.2s;
+}
+
+.remove-product-button:hover {
+  filter: brightness(0.8);
+}
+
+.cart-total-container {
+  border-top: 1px solid var(--gray);
+  text-align: end;
+  padding: 6px 16px 0 0;
+  font-size: 18px;
+}
+
+.cart-total-container strong {
+  margin-right: 12px;
+}
+
+.purchase-button {
+  display: flex;
+  margin: 24px auto 0;
+  background: #60ade3;
+  color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.purchase-button:hover {
+  filter: brightness(0.8);
+}

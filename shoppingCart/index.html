@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carrinho de Compras</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="../homePage/index.html">Home</a></li>
+            <li><a href="../loja/index.html">Shop</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+          <div class="container" id="container">
+            <div class="title">
+                <h1>Carrinho</h1>
+            </div>
+            <div class="cart-top">
+              <div class="title-itens">itens</div>
+              <div class="title-price">price</div>
+              <div class="title-quantity">quantity</div>
+            </div>
+            <div class="center">
+                <div class="itens">
+                    <img src="../assets/sala2.jfif" alt="">
+                    <span>Modern Design</span>
+                </div>
+                <div class="preco">
+                    <span>R$59,99</span>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="1" min="0" id="product-qtd-input" class="product-qtd-input">
+                    <button type="button" class="remove-product-button" id="remove-product-button">Remover</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="cart-total-container">
+                    <strong>Total</strong>
+                    <span>R$0,00</span>
+                </div>
+            </div>
+          </div>
+        <button type="button" class="purchase-button">Finalizar Compra</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
